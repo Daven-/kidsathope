@@ -19,6 +19,7 @@ class CreateStaffTable extends Migration
             $table->text('fname');
             $table->text('lname');
             $table->text('grade');
+            $table->integer('school_id')->unsigned();
             $table->foreign('school_id')->references('id')->on('schools');
             $table->timestamps();
         });

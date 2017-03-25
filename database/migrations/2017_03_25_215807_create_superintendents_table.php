@@ -16,6 +16,7 @@ class CreateSuperintendentsTable extends Migration
         Schema::create('superintendents', function (Blueprint $table) {
             $table->increments('id');
             $table->text('name');
+            $table->integer('district_id')->unsigned();
             $table->foreign('district_id')->references('id')->on('districts');
             $table->timestamps();
         });
