@@ -1,1 +1,0 @@
-{"virtualbox":{"/home/vagrant/Code/kidsathope":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/Code/kidsathope","hostpath":"C:/Users/daven/Documents/GitHub/kidsathope","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/daven/Documents/GitHub/kidsathope","disabled":false,"__vagrantfile":true}}}
