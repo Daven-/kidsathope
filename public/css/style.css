@@ -1,6 +1,14 @@
+.csv-boxes-row {
+    margin-top: 20px;
+}
+
 .csv-button-box {
     background-color: lightblue;
     height: 120px;
     padding-top: 20px;
     padding-left: 20px;
+}
+
+.admin-table-row {
+    margin-top: 50px;
 }
