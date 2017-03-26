@@ -27,6 +27,54 @@ $factory->define(User::class, function (Generator $faker) {
     ];
 });
 
+$factory->define(App\District::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->company
+    ];
+});
+
+$factory->define(App\School::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->company,
+        'district_id' => "1"
+    ];
+});
+
+$factory->define(App\Staff::class, function (Faker\Generator $faker) {
+    return [
+        'title' => $faker->title,
+        'fname' => $faker->firstName,
+        'lname' => $faker->lastName,
+        'grade' => "".rand(1,12)."",
+        'school_id' => "".rand(1,15).""
+    ];
+});
+
+$factory->define(App\Student::class, function (Faker\Generator $faker) {
+    return [
+        'fname' => $faker->firstName,
+        'lname' => $faker->lastName,
+        'grade' => "".rand(1,12)."",
+        'school_id' => "".rand(1,15).""
+    ];
+});
+
+$factory->define(App\Person::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->name,
+        'student_id' => "".rand(1,10000)."",
+        'student_num' => $faker->uuid
+    ];
+});
+
+$factory->define(App\Person::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->name,
+        'student_id' => "".rand(1,10000)."",
+        'student_num' => $faker->uuid
+    ];
+});
+
 $factory->state(User::class, 'active', function () {
     return [
         'status' => 1,
