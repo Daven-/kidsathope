@@ -2,11 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Access\User\Traits\UserAccess;
+use App\Services\Access\Access;
 use App\Student;
 use Illuminate\Http\Request;
+//use App\Models\Access\User\Traits;
 
 class StudentController extends Controller
 {
+
+    use UserAccess;
+
+    public function __construct()
+    {
+
+        $this->middleware('auth')->except(['index']);
+    }
+
+
     /**
      * Display a listing of the resource.
      *
