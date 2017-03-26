@@ -1,3 +1,7 @@
+.csv-boxes-row {
+    margin-top: 20px;
+}
+
 .csv-button-box {
     background-color: lightblue;
     height: 120px;
@@ -5,15 +9,11 @@
     padding-left: 20px;
 }
 
-/* Used for student layout - Joe */
-.student-row :nth-child(even){
-  background-color: pink;
-}
-.student-row :nth-child(odd){
-  background-color: yellow;
-}
-
 .student-page-input-spacing {
   margin-top: 150px;
 
+}
+
+.admin-table-row {
+    margin-top: 50px;
 }

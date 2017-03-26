@@ -48,8 +48,9 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
 });
 
 
-Route::get('/staff23', 'StaffController@index');
-Route::get('/staff', function(){ return view('staff');});
+Route::get('/staff', 'StaffController@index');
+Route::get('/seed', 'StaffController@seedDB');
+Route::get('/staff23', function(){ return view('staff');});
 Route::get('/admin', function(){ return view('admin');});
 Route::get('/edit', function(){ return view('edit');});
 Route::get('/homepage', function(){ return view('homepage');});

@@ -2,29 +2,45 @@
 @section('content')
 
 <h1 class="display-3">View & Edit Access</h1>
+<?php
+  $school_name = "Some School";
+  $staff_member = "Johnny Rocket";
+  $nums = array("K", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+  $students = array("James Woods", "Peter Griffin", "Glen Quagmire", "Tom Cruise", "Dane Cook", "Lois Griffin", "Brian Griffin", "Stewie Griffin")
+?>
 
+<h3>{{$school_name}}</h3>
+<h4>{{$staff_member}}</h4>
 
-<h3>School name goes here</h3>
-<h4>Staff member name goes here</h4>
 <!-- Example row of columns -->
 <div class="row">
   <div class="col-md-6">
     <h4>Who have you been an ace to?</h4>
     <form>
-          <label for="">Students First Name
-            <input type="text" class="form-control" id="fname" placeholder="ex: John Doe" autocomplete="off">
-          </label>
-      <label for="">Students Last Name
-        <input type="text" class="form-control" id="fname" placeholder="ex: John Doe" autocomplete="off">
-      </label>
-            <button type="submit" class="btn btn-primary btn-default">Submit</button>
+      <div class="form-group">
+        <label class="control-label">Input addons</label>
+        <div class="input-group">
+          <input type="text" placeholder="First Name" class="form-control">
+          <span class="input-group-btn"></span>
+          <input type="text" placeholder="Last Name" class="form-control">
+          <span class="input-group-btn"></span>
+          <select type="text" placeholder="Last Name" class="form-control" style="width:60px;">
+            @foreach ($nums as $num)
+              <option value="{{$num}}">{{$num}}</option>
+            @endforeach
+          </select>
+          <span class="input-group-btn"></span>
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="submit">Add Student</button>
+          </span>
+        </div>
+      </div>
     </form>
 
     <ul>
-      <li>This is</li>
-      <li>the list</li>
-      <li>of their students</li>
-      <li>that they added</li>
+      @foreach ($students as $student)
+        <li>{{$student}}</li>
+      @endforeach
     </ul>
   </div>
 </div>
