@@ -1,6 +1,7 @@
 
 @extends('layouts.index')
 @section('content')
+
 <div class="container" >
   @php
     $staff=array("Lin Manuel Miranda","Malcolm Reynolds","Aeryn Suen");
@@ -34,9 +35,6 @@
       <h4>Who is an Ace in your book?</h4>
 
       <ul class="list-unstyled">
-        <!--@foreach($students as $student)
-          <li>{{ $student }}</li>
-        @endforeach -->
         @foreach($staff as $person)
           <li>
             <div class="col-md-8 " >

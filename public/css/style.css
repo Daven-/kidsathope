@@ -8,9 +8,7 @@ body {
 
 .hero {
     margin: 0;
-    background-color: black;
-    background-image: url('../images/adultandkid.jpg') no-repeat;
-    color: white;
+    color: #0055AA;
 }
 .inline-space {
     margin-right: 10px;
