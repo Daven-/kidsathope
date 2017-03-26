@@ -7,12 +7,12 @@ body {
 
 .hero {
     margin: 0;
+    background-color: black;
     background-image: url('../images/adultandkid.jpg') no-repeat;
     color: white;
 }
 
 .main {
-    background: black;
 }
 
 .subhead-image {
