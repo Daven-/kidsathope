@@ -3,9 +3,13 @@
 
 <h1 class="display-3">View & Edit Access</h1>
 
-
 <h3>School name goes here</h3>
-<h4>Staff member name goes here</h4>
+@foreach( $staffSchoolName as $ssn)
+  <h4>{{ $ssn->name }}</h4>
+  @endforeach
+<h4>{{ $staffSchoolName }}</h4>
+<h4>{{ $name['fname'] }}</h4>
+<h4>{{ $name['lname'] }}</h4>
 <!-- Example row of columns -->
 <div class="row">
   <div class="col-md-6">
@@ -21,10 +25,9 @@
     </form>
 
     <ul>
-      <li>This is</li>
-      <li>the list</li>
-      <li>of their students</li>
-      <li>that they added</li>
+      @foreach( $students as $student)
+        <li>{{ $student->fname }} {{ $student->lname }}</li>
+      @endforeach
     </ul>
   </div>
 </div>
