@@ -1,3 +1,100 @@
+
+body {
+    /*background: #DDD;*/
+    font-family: 'Raleway', sans-serif;
+    padding-top: 65px; 
+}
+
+
+.hero {
+    margin: 0;
+    background-color: black;
+    background-image: url('../images/adultandkid.jpg') no-repeat;
+    color: white;
+}
+.inline-space {
+    margin-right: 10px;
+}
+.student-search {
+    margin: 20px 10px;;
+}
+.student-list {
+    margin-top: 20px;
+}
+
+.student-search .form-group,
+.student-search .form-control,
+.student-search button {
+    width: 200px;
+}
+
+.student-list li {
+    border: 1px lightgray solid;
+    margin: 10px;
+    border-radius: 5px;
+    z-index: 100;
+}
+.student-list li a {
+    padding-left: 10px;
+}
+.idnum {
+    border-radius: 5px 0 0 5px;    
+    border-right: 1px lightgray solid;
+    background-color: #f0f0f0;
+    width: 50px;
+    padding: 10px;
+    display: inline-block;
+    font-family: monospace;
+}
+
+.login {
+    padding: 30px;
+}
+
+.logo-image {
+    width: 40px;
+}
+
+.subhead-image {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.navbar-fixed-top {
+    background: #FFCC00; /*#88AACC;*/
+    font-weight: 700;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus {
+    color: darkblue;
+}
+
+.navbar-nav>.active>a, 
+.navbar-nav>.active>a:hover,
+.navbar-nav>a:hover,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a:hover
+.navbar-default .navbar-nav>li>a:active,
+.navbar-default .navbar-nav>.active>a:active {
+    border-color: darkblue;
+}
+
+.print-button {
+    margin: 20px 10px;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .student-search button {
+        margin-top: 20px;
+    }
+  
 .csv-boxes-row {
     margin-top: 20px;
 }
