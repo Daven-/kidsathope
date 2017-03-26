@@ -20,6 +20,7 @@ class CreateStudentsTable extends Migration
             $table->text('grade');
             $table->integer('school_id')->unsigned();
             $table->foreign('school_id')->references('id')->on('schools');
+            $table->text('student_num');
             $table->timestamps();
         });
     }
