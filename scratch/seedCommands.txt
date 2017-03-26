@@ -5,4 +5,8 @@ $student = factory(App\Student::class, 10000)->create();
 $person = factory(App\Person::class, 10000)->create();
 
 
+
+$student_staff = factory(App\StudentStaff::class, 10000)->create();
+
+
 php artisan make:migration add_student_id_num --table=students

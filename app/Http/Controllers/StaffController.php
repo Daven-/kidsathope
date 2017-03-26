@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Staff;
 use Illuminate\Http\Request;
+use App\DatabaseSeeder;
 
 class StaffController extends Controller
 {
@@ -14,7 +15,24 @@ class StaffController extends Controller
      */
     public function index()
     {
-        dd(Staff::all());
+        $staffFName = Staff::find(1)->fname;
+        $staffLName = Staff::find(1)->lname;
+        $name = array(
+            'fname' => $staffFName,
+            'lname' => $staffLName,
+        );
+        $staffSchoolName = Staff::find(1)->school()->get();
+
+        $students =  Staff::find(1)->student()->get();
+
+//        return view('staff', [compact('staff'),compact('staffSchoolName'),compact('name'),compact('students')]);
+        return view('staff', compact('staff','staffSchoolName', 'name', 'students'));
+//        return view('staff', compact('name'));
+    }
+
+    public function seedDB(){
+       $seed = new DatabaseSeeder;
+       $seed->run();
     }
 
     /**
