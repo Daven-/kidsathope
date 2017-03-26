@@ -8,6 +8,18 @@
 // Switch between the included languages
 Route::get('lang/{lang}', 'LanguageController@swap');
 
+Route::get('students', function() {
+    return view('students');
+});
+
+Route::get('staff', function() {
+    return view('staff');
+});
+
+Route::get('admin', function() {
+    return view('admin');
+});
+
 /* ----------------------------------------------------------------------- */
 
 /*
