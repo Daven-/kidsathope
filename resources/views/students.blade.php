@@ -25,9 +25,6 @@
 
     <h4>Who is an Ace in your book?</h4>
     <ul>
-      @foreach($students as $student)
-        <li>{{ $student }}</li>
-      @endforeach
       <li>This is <a href="#" class="btn btn-success">Yes</a> <a href="#" class="btn btn-danger">No</a></li>
       <li>a list <a href="#" class="btn btn-success">Yes</a> <a href="#" class="btn btn-danger">No</a></li>
       <li>of students <a href="#" class="btn btn-success">Yes</a> <a href="#" class="btn btn-danger">No</a></li>

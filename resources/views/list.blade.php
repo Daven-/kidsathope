@@ -55,15 +55,11 @@
                   <li><span class="idnum">234</span><a href="student.html?aaronburr234">Aaron Burr</a></li>
                   <li><span class="idnum">768</span><a href="student.html?herculesmulligan768">Hercules Mulligan</a></li>
                   <li><span class="idnum">119</span><a href="student.html?lafayette119">Lafayette</a></li>
-                  <li><span class="idnum">234</span><a href="student.html?aaronburr234">Aaron Burr</a></li>
-                  <li><span class="idnum">768</span><a href="student.html?herculesmulligan768">Hercules Mulligan</a></li>
-                  <li><span class="idnum">119</span><a href="student.html?lafayette119">Lafayette</a></li>
-                  <li><span class="idnum">234</span><a href="student.html?aaronburr234">Aaron Burr</a></li>
-                  <li><span class="idnum">768</span><a href="student.html?herculesmulligan768">Hercules Mulligan</a></li>
-                  <li><span class="idnum">119</span><a href="student.html?lafayette119">Lafayette</a></li>
-                  <li><span class="idnum">234</span><a href="student.html?aaronburr234">Aaron Burr</a></li>
-                  <li><span class="idnum">768</span><a href="student.html?herculesmulligan768">Hercules Mulligan</a></li>
-                  <li><span class="idnum">119</span><a href="student.html?lafayette119">Lafayette</a></li>
+                  <li><span class="idnum">234</span><a href="student.html?aaronburr234">Thedosia Burr</a></li>
+                  <li><span class="idnum">119</span><a href="student.html?lafayette119">Peggy Schuyler</a></li>
+                  <li><span class="idnum">234</span><a href="student.html?aaronburr234"></a>Thomas Jefferson</li>
+                  <li><span class="idnum">234</span><a href="student.html?aaronburr234"></a>George Washington</li>
+                  <li><span class="idnum">234</span><a href="student.html?aaronburr234"></a>James Madison</li>
                 </ul>
                 <nav aria-label="Page navigation">
                   <ul class="pagination">

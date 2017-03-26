@@ -33,7 +33,6 @@
             <li class="active"><a href="/homepage">Aces</a> <span class="sr-only">(current)</span></li>
             <li class=""><a href="/list">Dashboard</a></li>
             <li><a href="/criteria">Aces Criteria</a></li>
-            <li><a href="/help">Help</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/login">Login</a></li>
@@ -49,7 +48,7 @@
 <!-- END DIFFERENTIATED CONTENT HERE -->
       <hr>
       <footer>
-        <p class="text-center">&copy; Kids at Hope 2017</p>
+        <p class="text-center">&copy; Kids at Hope 2017 | <a href="http://kidsathope.org/aces/temp/manual.pdf">Help</a></p>
       </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
