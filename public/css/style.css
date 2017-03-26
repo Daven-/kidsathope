@@ -104,6 +104,11 @@ body {
     padding-left: 20px;
 }
 
+.student-page-input-spacing {
+  margin-top: 150px;
+
+}
+
 .admin-table-row {
     margin-top: 50px;
 }
