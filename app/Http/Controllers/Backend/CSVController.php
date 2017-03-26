@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Student;
 
 /**
  * Class DashboardController.
@@ -24,9 +25,16 @@ class CSVController extends Controller
       }
       $pLines = array();
       foreach ($lines as $line) {
-        $pLines[] = explode(' ', $line[0]);
+        $studentData = explode(' ', $line[0]);
+        $student = new Student;
+        $student->fname = $studentData[0];
+        $student->lname = $studentData[1];
+        $student->grade = $studentData[2];
+        $student->student_id_num = $studentData[3];
+        $student->school_id = 1;
+        $student->save();
+
       }
       return redirect('admin/dashboard')->with('csv', $pLines);
     }
 }
-``
