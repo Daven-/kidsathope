@@ -15,7 +15,8 @@ class CreatePeopleTable extends Migration
     {
         Schema::create('people', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('name');
+            $table->text('fname');
+            $table->text('lname');
             $table->integer('student_id')->unsigned();
             $table->foreign('student_id')->references('id')->on('students');
             $table->text('student_num');

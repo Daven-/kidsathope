@@ -46,3 +46,10 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
      */
     includeRouteFiles(__DIR__.'/Backend/');
 });
+
+
+Route::get('/staff', 'StaffController@index');
+
+Route::get('/students', 'StudentController@index');
+
+Route::post('upload/csv', 'Backend\CSVController@uploadCSV'); // NOTE: 
