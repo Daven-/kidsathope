@@ -31,8 +31,8 @@ class StaffController extends Controller
     }
 
     public function seedDB(){
-//        $seed = new DatabaseSeeder;
-//        $seed->run();
+       $seed = new DatabaseSeeder;
+       $seed->run();
     }
 
     /**

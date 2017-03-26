@@ -64,6 +64,7 @@ $factory->define(App\Person::class, function (Faker\Generator $faker) {
     return [
         'fname' => $faker->firstName,
         'lname' => $faker->lastName,
+        'name' => $faker->firstName,
         'student_id' => rand(1,1000),
         'student_num' => $faker->uuid
     ];
