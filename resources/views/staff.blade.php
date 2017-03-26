@@ -38,13 +38,8 @@
     </form>
 
     <ul>
-<<<<<<< HEAD
       @foreach ($students as $student)
         <li>{{$student}}</li>
-=======
-      @foreach( $students as $student)
-        <li>{{ $student->fname }} {{ $student->lname }}</li>
->>>>>>> d692e679760d46ec5964fbb9f5a0c8e70c71f852
       @endforeach
     </ul>
   </div>
