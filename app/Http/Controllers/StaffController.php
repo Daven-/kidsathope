@@ -15,15 +15,15 @@ class StaffController extends Controller
      */
     public function index()
     {
-        $staffFName = Staff::find(1)->fname;
-        $staffLName = Staff::find(1)->lname;
+        $staffFName = Staff::find(2)->fname;
+        $staffLName = Staff::find(2)->lname;
         $name = array(
             'fname' => $staffFName,
             'lname' => $staffLName,
         );
-        $staffSchoolName = Staff::find(1)->school()->get();
+        $staffSchoolName = Staff::find(2)->school()->get();
 
-        $students =  Staff::find(1)->student()->get();
+        $students =  Staff::find(2)->student()->get();
 
 //        return view('staff', [compact('staff'),compact('staffSchoolName'),compact('name'),compact('students')]);
         return view('staff', compact('staff','staffSchoolName', 'name', 'students'));
@@ -31,8 +31,8 @@ class StaffController extends Controller
     }
 
     public function seedDB(){
-//        $seed = new DatabaseSeeder;
-//        $seed->run();
+        $seed = new DatabaseSeeder;
+        $seed->run();
     }
 
     /**

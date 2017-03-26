@@ -7,7 +7,6 @@
 @foreach( $staffSchoolName as $ssn)
   <h4>{{ $ssn->name }}</h4>
   @endforeach
-<h4>{{ $staffSchoolName }}</h4>
 <h4>{{ $name['fname'] }}</h4>
 <h4>{{ $name['lname'] }}</h4>
 <!-- Example row of columns -->
