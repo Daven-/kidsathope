@@ -53,10 +53,12 @@ Route::get('/staff', function(){ return view('staff');});
 Route::get('/admin', function(){ return view('admin');});
 Route::get('/edit', function(){ return view('edit');});
 Route::get('/homepage', function(){ return view('homepage');});
+Route::get('/criteria', function(){ return view('criteria');});
 Route::get('/students', function(){ return view('students');});
 Route::get('/teacher', function(){ return view('teacher');});
 Route::get('/index', function(){ return view('index');});
 Route::get('/main', function(){ return view('main');});
+Route::get('/list', function(){ return view('list');});
 
 Route::get('/students', 'StudentController@index');
 
