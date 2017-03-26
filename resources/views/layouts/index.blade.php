@@ -9,6 +9,7 @@
     <title>Kids at Hope</title>
     <!-- Bootstrap core CSS -->
     <link href="http://bootswatch.com/readable/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/style.css">
      <!--Custom styles for this template 
     <link href="./css/jumbotron.css" rel="stylesheet">
     <link href="./css/custom.css" rel="stylesheet">-->
