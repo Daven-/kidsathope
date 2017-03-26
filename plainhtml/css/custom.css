@@ -1,0 +1,30 @@
+body {
+    /*background: #DDD;*/
+    font-family: 'Raleway', sans-serif;
+    padding-top: 65px; 
+}
+
+
+.hero {
+    margin: 0;
+    background-image: url('../images/adultandkid.jpg') no-repeat;
+    color: white;
+}
+
+.main {
+    background: black;
+}
+
+.subhead-image {
+    width: 100%;
+    height: 300px;
+    background: gray;
+}
+
+.login {
+    padding: 30px;
+}
+
+.logo-image {
+    width: 40px;
+}
