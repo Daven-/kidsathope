@@ -25,12 +25,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/index"><img class="logo-image" alt="Kids at Hope Logo" src="img/site/logo.png" /></a>
+          <a class="navbar-brand" href="/homepage"><img class="logo-image" alt="Kids at Hope Logo" src="img/site/logo.png" /></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/index">Aces</a> <span class="sr-only">(current)</span></li>
+            <li class="active"><a href="/homepage">Aces</a> <span class="sr-only">(current)</span></li>
             <li class=""><a href="/list">Dashboard</a></li>
             <li><a href="/criteria">Aces Criteria</a></li>
             <li><a href="/help">Help</a></li>
@@ -43,7 +43,7 @@
     </nav>
 
 <!-- START DIFFERENTIATED CONTENT HERE -->
-    <div class="container-flex main">
+    <div class="container main">
       @yield('content')
     </div>
 <!-- END DIFFERENTIATED CONTENT HERE -->
