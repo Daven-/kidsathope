@@ -14,7 +14,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-
         for ($i = 2; $i < 11; $i++) {
             for ($j = 1; $j < 100; $j++) {
                 \DB::table('school_staff')->insert([
