@@ -4,3 +4,16 @@
     padding-top: 20px;
     padding-left: 20px;
 }
+
+/* Used for student layout - Joe */
+.student-row :nth-child(even){
+  background-color: pink;
+}
+.student-row :nth-child(odd){
+  background-color: yellow;
+}
+
+.student-page-input-spacing {
+  margin-top: 150px;
+
+}
