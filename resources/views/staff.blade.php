@@ -3,14 +3,14 @@
 
 <h1 class="display-3">View & Edit Access</h1>
 <?php
-  $school_name = "Some School";
-  $staff_member = "Johnny Rocket";
+  // $school_name = "Some School";
+  // $staff_member = "Johnny Rocket";
   $nums = array("K", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
-  $students = array("James Woods", "Peter Griffin", "Glen Quagmire", "Tom Cruise", "Dane Cook", "Lois Griffin", "Brian Griffin", "Stewie Griffin")
+  // $students = array("James Woods", "Peter Griffin", "Glen Quagmire", "Tom Cruise", "Dane Cook", "Lois Griffin", "Brian Griffin", "Stewie Griffin");
 ?>
 
-<h3>{{$school_name}}</h3>
-<h4>{{$staff_member}}</h4>
+<h3>{{$staffSchoolName}}</h3>
+<h4>{{$name[0] -> fname}}</h4>
 
 <!-- Example row of columns -->
 <div class="row">

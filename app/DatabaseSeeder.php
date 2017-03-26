@@ -15,11 +15,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
-        for ($i = 1; $i < 100; $i++) {
-            for ($j = 1; $j < 11; $j++) {
+        for ($i = 1; $i < 11; $i++) {
+            for ($j = 1; $j < 100; $j++) {
                 \DB::table('staff_student')->insert([
                     'person_id' => $i+3,
-                    'staff_id' => $j,
+                    'staff_id' => $i,
                     'student_id' => $j,
                     'student_num' => str_random(10),
                     'teacher_owner' => rand(0,1),
