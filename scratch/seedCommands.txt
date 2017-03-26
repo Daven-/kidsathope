@@ -1,5 +1,5 @@
-factory(App\District::class)->create();
-$school = factory(App\School::class)->create();
+factory(App\District::class, 1)->create();
+$school = factory(App\School::class, 40)->create();
 $staff = factory(App\Staff::class, 1000)->create();
 $student = factory(App\Student::class, 10000)->create();
 $person = factory(App\Person::class, 10000)->create();

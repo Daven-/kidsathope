@@ -55,22 +55,16 @@ $factory->define(App\Student::class, function (Faker\Generator $faker) {
         'fname' => $faker->firstName,
         'lname' => $faker->lastName,
         'grade' => "".rand(1,12)."",
-        'school_id' => "".rand(1,15).""
+        'school_id' => "".rand(1,15)."",
+        'student_id_num' => "".rand(100, 999).""
     ];
 });
 
 $factory->define(App\Person::class, function (Faker\Generator $faker) {
     return [
-        'name' => $faker->name,
-        'student_id' => "".rand(1,10000)."",
-        'student_num' => $faker->uuid
-    ];
-});
-
-$factory->define(App\Person::class, function (Faker\Generator $faker) {
-    return [
-        'name' => $faker->name,
-        'student_id' => "".rand(1,10000)."",
+        'fname' => $faker->firstName,
+        'lname' => $faker->lastName,
+        'student_id' => rand(1,1000),
         'student_num' => $faker->uuid
     ];
 });
