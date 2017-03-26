@@ -48,8 +48,17 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
 });
 
 
-Route::get('/staff', 'StaffController@index');
+Route::get('/staff23', 'StaffController@index');
+Route::get('/staff', function(){ return view('staff');});
+Route::get('/admin', function(){ return view('admin');});
+Route::get('/edit', function(){ return view('edit');});
+Route::get('/homepage', function(){ return view('homepage');});
+Route::get('/students', function(){ return view('students');});
+Route::get('/teacher', function(){ return view('teacher');});
+Route::get('/index', function(){ return view('index');});
+Route::get('/main', function(){ return view('main');});
 
 Route::get('/students', 'StudentController@index');
 
-Route::post('upload/csv', 'Backend\CSVController@uploadCSV'); // NOTE: 
+Route::post('upload/csv', 'Backend\CSVController@uploadCSV'); // NOTE:
+

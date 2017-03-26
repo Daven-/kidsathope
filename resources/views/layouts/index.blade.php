@@ -25,18 +25,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html"><img class="logo-image" alt="Kids at Hope Logo" src="./images/logo.png" /></a>
+      <a class="navbar-brand" href="/index"><img class="logo-image" alt="Kids at Hope Logo" src="img/site/adultandkid.png" /></a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Aces</a> <span class="sr-only">(current)</span></li>
-        <li class=""><a href="list.html">Dashboard</a></li>
-        <li><a href="criteria.html">Aces Criteria</a></li>
-        <li><a href="help.html">Help</a></li>
+        <li class="active"><a href="/index">Aces</a> <span class="sr-only">(current)</span></li>
+        <li class=""><a href="/list">Dashboard</a></li>
+        <li><a href="/criteria">Aces Criteria</a></li>
+        <li><a href="/help">Help</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="login.html">Login</a></li>
+        <li><a href="/login">Login</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>

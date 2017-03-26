@@ -1,6 +1,9 @@
 @extends('layouts.index')
 @section('content')
-<h1 class="display-3">View & Edit Aces</h1>
+
+<h1 class="display-3">View & Edit Access</h1>
+
+
 <h3>School name goes here</h3>
 <h4>Staff member name goes here</h4>
 <!-- Example row of columns -->
@@ -8,18 +11,13 @@
   <div class="col-md-6">
     <h4>Who have you been an ace to?</h4>
     <form>
-      <fieldset>
-        <div class="form-group">
-          <div class="col-lg-4">
-            <input type="text" class="form-control" id="inputEmail" placeholder="ex: John Doe" autocomplete="off">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-lg-10 col-lg-offset-2">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </div>
-      </fieldset>
+          <label for="">Students First Name
+            <input type="text" class="form-control" id="fname" placeholder="ex: John Doe" autocomplete="off">
+          </label>
+      <label for="">Students Last Name
+        <input type="text" class="form-control" id="fname" placeholder="ex: John Doe" autocomplete="off">
+      </label>
+            <button type="submit" class="btn btn-primary btn-default">Submit</button>
     </form>
 
     <ul>
