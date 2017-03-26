@@ -11,8 +11,39 @@ body {
     background-image: url('../images/adultandkid.jpg') no-repeat;
     color: white;
 }
+.inline-space {
+    margin-right: 10px;
+}
+.student-search {
+    margin: 20px 10px;;
+}
+.student-list {
+    margin-top: 20px;
+}
 
-.main {
+.student-search .form-group,
+.student-search .form-control,
+.student-search button {
+    width: 200px;
+}
+
+.student-list li {
+    border: 1px lightgray solid;
+    margin: 10px;
+    border-radius: 5px;
+    z-index: 100;
+}
+.student-list li a {
+    padding-left: 10px;
+}
+.idnum {
+    border-radius: 5px 0 0 5px;    
+    border-right: 1px lightgray solid;
+    background-color: #f0f0f0;
+    width: 50px;
+    padding: 10px;
+    display: inline-block;
+    font-family: monospace;
 }
 
 .subhead-image {
@@ -27,4 +58,10 @@ body {
 
 .logo-image {
     width: 40px;
+}
+
+@media (max-width: 768px) {
+    .student-search button {
+        margin-top: 20px;
+    }
 }
