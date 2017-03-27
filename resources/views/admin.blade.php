@@ -1,8 +1,8 @@
 @extends('layouts.index')
 @section('content')
 <h1 class="display-3">View & Edit Aces</h1>
-<h3>School name goes here</h3>
-<h4>Admin name goes here</h4>
+<h3>Alexander Hamilton Elementary</h3>
+<h4>Angelica Schyuler</h4>
 <!-- Example row of columns -->
 <div class="csv-boxes-row row">
     <div class="csv-button-box col-md-4 col-md-offset-1">

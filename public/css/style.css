@@ -8,9 +8,7 @@ body {
 
 .hero {
     margin: 0;
-    background-color: black;
-    background-image: url('../images/adultandkid.jpg') no-repeat;
-    color: white;
+    color: #0055AA;
 }
 .inline-space {
     margin-right: 10px;
@@ -104,6 +102,11 @@ body {
     height: 120px;
     padding-top: 20px;
     padding-left: 20px;
+}
+
+.student-page-input-spacing {
+  margin-top: 150px;
+
 }
 
 .admin-table-row {
