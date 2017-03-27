@@ -49,6 +49,7 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
 
 
 Route::get('/staff', 'StaffController@index');
+Route::post('/staff', 'StaffController@addStudent');
 Route::get('/seed', 'StaffController@seedDB');
 Route::get('/staff23', function(){ return view('staff');});
 Route::get('/admin', function(){ return view('admin');});

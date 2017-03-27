@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Staff;
+use App\Student;
 use Illuminate\Http\Request;
 use App\DatabaseSeeder;
 
@@ -43,6 +44,39 @@ class StaffController extends Controller
     public function create()
     {
         //
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function addStudent(Request $request)
+    {
+        //
+//        dd($request);
+
+//        dd($request->fname);
+
+        $school_id = explode(';', $request->school);
+//        dd($school_id[1]);
+
+        $student = new Student();
+        $student->fname = $request->fname;
+        $student->lname = $request->lname;
+        $student->grade = $request->grade;
+        $student->school_id = $school_id[1];
+        $student->save();
+
+//        $name = School::where('name', $request->school)->get();
+//        $name[0]->id;
+
+        $staff = Staff::find(2);
+
+        $staff->student()->attach($student->id, array("person_id" => 0, "student_num" => str_random(10), "teacher_owner" => 1, "student_owner" => 0, "student_confirmed" => 0));
+
+        dd($request);
+
     }
 
     /**
